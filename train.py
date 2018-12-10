@@ -131,7 +131,7 @@ def train(train_loader, dev_loader, model, args):
     print('fc:', total_param_fc)
     print('total:', total_param, '\n')
 
-    summary(model, (32, 1024))
+    summary(model, (256, 70, 7))
 
     model.train()
 

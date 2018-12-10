@@ -57,8 +57,8 @@ def summary(model, input_size, batch_size=-1, device="cuda"):
         input_size = [input_size]
 
     # batch_size of 2 for batchnorm
-    x = [torch.rand( *in_size).type(torch.long).cuda() for in_size in input_size]
-    #x = [torch.rand(2, *in_size).type(dtype) for in_size in input_size]
+    # x = [torch.rand( *in_size).type(torch.long).cuda() for in_size in input_size]
+    x = [torch.rand(2, *in_size).type(dtype) for in_size in input_size]
 
     # create properties
     summary = OrderedDict()
